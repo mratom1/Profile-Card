@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myat Naing - Profile Card</title>
+    
+    <!-- External CSS ချိတ်ဆက်ခြင်း -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Internal CSS: ခေါင်းစဉ်တစ်ခုတည်းကို သီးသန့်ဒီဇိုင်းဆင်ခြင်း -->
+    <style>
+        h1.profile-name {
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 5px;
+            font-size: 1.8rem;
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <div class="card-container">
+        <div class="profile-card">
+            <!-- Profile Picture -->
+            <img src="https://ui-avatars.com/api/?name=Myat+Naing&background=2c3e50&color=fff&size=150" alt="Myat Naing Profile" class="profile-pic">
+            
+            <!-- Name & Title -->
+            <h1 class="profile-name">Myat Naing (Mr. Atom)</h1>
+            <h3 class="job-title">Software Engineer & AI Developer</h3>
+            
+            <!-- Inline CSS: Bio စာသားအတွက် သီးသန့်ရေးခြင်း -->
+            <p class="bio" style="margin-top: 15px; padding: 10px; font-style: italic; border-bottom: 1px dashed gray;">
+                Specializing in cross-platform mobile development (Flutter), Python backend, and local AI integrations at Atom Development.
+            </p>
+
+            <div class="skills">
+                <span>Flutter</span>
+                <span>Python</span>
+                <span>FastAPI</span>
+            </div>
+
+            <!-- Button for DOM Manipulation -->
+            <button id="theme-toggle-btn" class="btn">Switch to Dark Mode</button>
+        </div>
+    </div>
+
+    <!-- JavaScript ချိတ်ဆက်ခြင်း -->
+    <script src="script.js"></script>
+</body>
+</html>
